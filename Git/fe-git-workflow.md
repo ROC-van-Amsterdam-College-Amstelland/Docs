@@ -103,7 +103,7 @@ Hieronder zie je hoe je een bestand staged en daarna commit in VS code:
 Een git push voer je uit om de bestanden zoals die zijn opgeslagen in je local repository te kopieeren naar Github (de remote repository). 
 
 Hieronder zie je hoe je een Git Push uitvoert in VS code:
-![](/img/../git/img/gifs/fe-git-push-2.gif)
+![Git push gif](img/gifs/fe-git-push-2.gif)
 
 #### Git pull
 
