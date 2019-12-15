@@ -115,7 +115,25 @@ Een git pull betekend de laatste versie van bestanden ophalen uit een remote rep
 
 Een Merge conflict vindt plaats als de bestanden die je binnen haalt van een remote Repository anders zijn dan de bestanden die je lokaal hebt staan in je working directory. Gelukkig geeft Visual Studio code je een gemakkelijke manier om de verschillen versies samen te voegen.
 
-//ADD gif merge conflict
+Als je een `git push` uitvoert in VS Code dan krijg je de onderstaande foutmelding te zien 
+
+![Git push foutmelding](img/git-push-error.png)
+
+Als je dan een `git pull` uitvoert probeert git de veranderingen die in de remote repository op github staan samen te voegen met de veranderingen die jij in je lokale repository hebt staan. Vaak kan Git dit zelf oplossen en _merged_ Git de bestanden voor je. Maar soms kan Git niet zelf beslissen welke versie van de code de juiste is. 
+
+![Git merge conflict after pulling from remote repository](img/gifs/php-git-merge-conflict-1.gif)
+
+In bovenstaande gif zie je wat VS Code dan voor opties aanbiedt. Er zijn twee _changes_: de Incoming Change (in het blauw), die van Github af komt en de Current Change (in het groen), de verandering die je lokaal hebt gemaakt. 
+
+In het bovenstaande voorbeeld is de Incoming Change de juiste: dus je kiest voor het accepteren van de Incoming Change bij de rij opties boven de changes in VS Code. De volledige workflow nadat een `git push` niet lukt ziet er dan als volgt uit:
+
+![Volledige git merge conflict opgelost](img/gifs/php-git-merge-conflict-4-keys.gif)
+
+> **LETOP!** Nadat je een merge conflict hebt opgelost moet je het bestand opslaan en de changes stagen en commiten in je lokale repository voor je weer een `git push` doet.
+
+Als je samenwerkt kan het ook zijn dat beide changes correcte code bevatten. Je kan dan ervoor kiezen beide changes te accepteren. In zo'n geval kan het zijn dat er wat dubbele code overblijft, deze moet je dan nadat je een merge conflict heb opgelost verwijderen voor je uiteindelijk het correct gemergde bestand weer commit en pushed.
+
+Uiteraard kun je veel conflicten vermijden door samen af te spreken wie waar precies aan werkt en in welke bestanden. Als je dan wilt werken aan een bestand waarvan je weet dat je mede ontwikkelaar aanpassingen heeft gedaan (en gepushed!) dan kun je voor jij begint aan je werk eerst een `git pull` doen om het laatste werk op te halen.
 
 #### Git branching
 
