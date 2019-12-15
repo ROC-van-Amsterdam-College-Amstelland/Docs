@@ -15,8 +15,6 @@ Git is een versiebeheer systeem. We gebruiken dit systeem binnen de opleiding om
       - [Git push](#git-push)
       - [Git pull](#git-pull)
       - [Merge Conflicts oplossen](#merge-conflicts-oplossen)
-      - [Git branching](#git-branching)
-      - [Git checkout](#git-checkout)
     - [Wat is...](#wat-is)
       - [Wat is een Repository?](#wat-is-een-repository)
       - [Wat is een Commit?](#wat-is-een-commit)
@@ -134,10 +132,6 @@ In het bovenstaande voorbeeld is de Incoming Change de juiste: dus je kiest voor
 Als je samenwerkt kan het ook zijn dat beide changes correcte code bevatten. Je kan dan ervoor kiezen beide changes te accepteren. In zo'n geval kan het zijn dat er wat dubbele code overblijft, dit moet je dan nadat je een merge conflict hebt opgelost handmatig opschonen voor je uiteindelijk het correct gemergde bestand weer commit en pushed.
 
 Uiteraard kun je veel conflicten vermijden door samen af te spreken wie waar precies aan werkt en in welke bestanden. Als je dan wilt werken aan een bestand waarvan je weet dat je mede ontwikkelaar daarin aanpassingen heeft gedaan (en gepushed!) dan kun je voor jij begint aan je werk eerst een `git pull` doen om het laatste werk op te halen.
-
-#### Git branching
-
-#### Git checkout
 
 ### Wat is...
 
