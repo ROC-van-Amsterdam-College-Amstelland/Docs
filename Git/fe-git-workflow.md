@@ -131,7 +131,7 @@ In het bovenstaande voorbeeld is de Incoming Change de juiste: dus je kiest voor
 
 > **LETOP!** Nadat je een merge conflict hebt opgelost moet je het bestand opslaan en de changes stagen en commiten in je lokale repository voor je weer een `git push` doet.
 
-Als je samenwerkt kan het ook zijn dat beide changes correcte code bevatten. Je kan dan ervoor kiezen beide changes te accepteren. In zo'n geval kan het zijn dat er wat dubbele code overblijft, deze moet je dan nadat je een merge conflict heb opgelost verwijderen voor je uiteindelijk het correct gemergde bestand weer commit en pushed.
+Als je samenwerkt kan het ook zijn dat beide changes correcte code bevatten. Je kan dan ervoor kiezen beide changes te accepteren. In zo'n geval kan het zijn dat er wat dubbele code overblijft, deze moet je dan nadat je een merge conflict hebt opgelost verwijderen voor je uiteindelijk het correct gemergde bestand weer commit en pushed.
 
 Uiteraard kun je veel conflicten vermijden door samen af te spreken wie waar precies aan werkt en in welke bestanden. Als je dan wilt werken aan een bestand waarvan je weet dat je mede ontwikkelaar aanpassingen heeft gedaan (en gepushed!) dan kun je voor jij begint aan je werk eerst een `git pull` doen om het laatste werk op te halen.
 
