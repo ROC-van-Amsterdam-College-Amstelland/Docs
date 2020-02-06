@@ -4,7 +4,14 @@
 
 ### Installatie:
 1. Ga naar [custom installatie instructies](https://xdebug.org/wizard.php) en volg de aangegeven stappen. 
-   > Om de output van phpinfo() te zien in je browser start je Apache via Xampp en download je [phpinfo.php](src/phpinfo.php) en zet dit in de htdocs map van je xampp installatie. Open dan [http://localhost/phpinfo.php](http://localhost/phpinfo.php) Selecteer alles (CTRL-A) op de pagina en copy paste dit in het invulveld op xdebug.org.
+   > Om de output van phpinfo() te zien in je browser start je Apache via Xampp maak je een bestand aan genaamd phpinfo.php en zet dit in de htdocs map van je xampp installatie. Zet de code die hieronder staat in je phpinfo.php bestand:
+   ```php
+    <?php
+    phpinfo();
+    ?>
+   ```
+   
+   Open dan [http://localhost/phpinfo.php](http://localhost/phpinfo.php) Selecteer alles (CTRL-A) op de pagina en copy paste dit in het invulveld op xdebug.org.
 
    >Open het php.ini bestand in Xampp via het Xampp controlle paneel > Apache > Config > PHP (php.ini)
 2. In bovenstaande stap wordt alleen de zend_extension variabele toegekent met het juiste pad zoals die voor jou installatie van xampp telt. Voeg de xdebug.remote en xdebug.remote_autostart variabelen toe en maak het geheel af met een mooi kopje, zie onderstaand voorbeeld.
